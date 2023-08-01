@@ -1,0 +1,18 @@
+Java Spring Boot
+-------------------
+JDK 17
+H2 DB 
+Spring Boot Starter Web
+Spring Boot JPA
+
+The default port number 8080.
+update the prefer port number in the applcation.properties
+http://localhost:8080/api/users 
+Response -> [{"id":2,"firstName":"Tom","lastName":"Cruise","email":"tom@gmail.com"},{"id":3,"firstName":"Tony","lastName":"Stark","email":"tony@gmail.com"},{"id":5,"firstName":"mi","lastName":"mi1","email":"mi.mi@bbc.com.sg"}]
+
+
+Angular 
+--To start the Angular 
+ng serve 
+
+http://localhost:4200/
