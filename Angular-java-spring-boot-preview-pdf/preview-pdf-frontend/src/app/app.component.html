@@ -1,0 +1,52 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="/">FrontBackend</a>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group">
+                    <a *ngFor="let pdfFile of pdfList" 
+                    [ngClass]="{'active': pdfFile.selected}" 
+                    href="#" class="list-group-item list-group-item-action" 
+                    (click)="showPdf(pdfFile, $event)">{{pdfFile.filename}}
+                    &nbsp;&nbsp;
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="col-10">
+                <div *ngIf="isLoaded" style="text-align: center;">
+                    <button class="btn btn-primary" style="background-color: #e3f2fd;" (click)="prevPage()" [disabled]="page === 1">Prev</button>
+                    <span class="mr-2 ml-2">{{ page }} / {{ totalPages }}</span>
+                    <button class="btn btn-primary" style="background-color: #e3f2fd;" (click)="nextPage()" [disabled]="page === totalPages">Next</button>
+                </div>
+                
+                <!--<pdf-viewer [src]="pdfDocumentSrc"
+                            [show-all]="false"
+                            [page]="page"
+                            (after-load-complete)="afterLoadComplete($event)"
+                ></pdf-viewer>  -->
+
+                <!--<div id="outerContainer">
+                    <div class="pdf-container"> -->
+                      <pdf-viewer
+                        [src]="pdfDocumentSrc"
+                        [page]="page"
+                        [show-all]="false"
+                        (after-load-complete)="afterLoadComplete($event)"
+                        style="width: 100%; height: 600px;"
+                      ></pdf-viewer>
+                   <!-- </div>
+                  </div>-->
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
