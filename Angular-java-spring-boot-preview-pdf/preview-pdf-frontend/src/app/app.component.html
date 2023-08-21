@@ -20,9 +20,9 @@
             </div>
             <div class="col-10">
                 <div *ngIf="isLoaded" style="text-align: center;">
-                    <button class="btn btn-primary" style="background-color: #e3f2fd;" (click)="prevPage()" [disabled]="page === 1">Prev</button>
+                    <button class="btn btn-primary"  (click)="prevPage()" [disabled]="page === 1">Prev</button>
                     <span class="mr-2 ml-2">{{ page }} / {{ totalPages }}</span>
-                    <button class="btn btn-primary" style="background-color: #e3f2fd;" (click)="nextPage()" [disabled]="page === totalPages">Next</button>
+                    <button class="btn btn-primary" (click)="nextPage()" [disabled]="page === totalPages">Next</button>
                 </div>
                 
                 <!--<pdf-viewer [src]="pdfDocumentSrc"
