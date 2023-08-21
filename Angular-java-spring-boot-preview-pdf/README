@@ -1,0 +1,13 @@
+Git Clone the source code
+
+Angular
+--to install the dependency, check the package.json about the dependency
+npm install 
+npm serve (http://localhost:4200 [Default])
+
+Java Spring Boot
+Clean Maven, install and Start the Spring Boot (http://localhost:8080/ [Default])
+Change the Port number in appliation.properties
+Change the pdf file path in the appliction.properties
+
+
