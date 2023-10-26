@@ -35,6 +35,10 @@ public class UserServiceImpl implements UserService {
         if (Objects.nonNull(user.getEmail()) && !"".equalsIgnoreCase(user.getEmail())) {
             depDB.setEmail(user.getEmail());
         }
+        
+        if (Objects.nonNull(user.getContent()) && !"".equalsIgnoreCase(user.getContent())) {
+        	depDB.setContent(user.getContent());
+        }
  
         return userRepository.save(depDB);
 	}
