@@ -5,11 +5,16 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-          <a class="nav-item nav-link active" routerLinkActive="active" routerLink="user">User List</a>
-          <a class="nav-item nav-link" routerLinkActive="active" routerLink="create-user">Create User</a>
+          <a class="nav-item nav-link active" routerLinkActive="active" routerLink="user">User List</a>&nbsp;&nbsp;
+          <a class="nav-item nav-link" routerLinkActive="active" routerLink="create-user">Create User</a>&nbsp;&nbsp;
+          <a class="nav-item nav-link active" routerLinkActive="active" routerLink="editor">Editor User List</a>&nbsp;&nbsp;
       </div>
   </div>
 </nav>
 
+
+
 <!--<app-user></app-user> -->
 <router-outlet></router-outlet>
+
+<app-editor *ngIf="configurationSet" [configuration]="config" [channelId]="channelId" (ready)="onEditorReady($event)"></app-editor>

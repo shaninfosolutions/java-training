@@ -3,9 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from './user';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+@Injectable(
+  {
+    providedIn:'root'
+  }
+)
+
+
 export class UserService {
 
   private baseUrl = "http://localhost:8080/api/users";
