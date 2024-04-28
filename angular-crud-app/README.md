@@ -35,20 +35,28 @@ https://www.npmjs.com/package/json-server
 npm i -g json-server
 
 ## Create the db.json then import it into the json server
+
 npx json-server db.json
 
 ## To create a new project
+
 ng new angular-crud-app --standalone=false
 
 ## To add the angular material
+
 ng add @angular/material
 
 ## to add a new component
+
 ng g c emp-add-edit
 
 ## to add the service
+
 ng g s services/employee
+
 ng g s core/core
+
+
 
 
 
