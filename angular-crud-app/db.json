@@ -1,0 +1,93 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "id": "6f69",
+      "firstName": "John",
+      "lastName": "KM",
+      "email": "john.km@abc.com.sg",
+      "dob": "2020-03-31T16:00:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "NCS",
+      "experience": 1,
+      "package": 2500
+    },
+    {
+      "firstName": "Nancy",
+      "lastName": "Tay",
+      "email": "nancy.tay@bbc.com.sg",
+      "dob": "2022-03-31T16:00:00.000Z",
+      "gender": "female",
+      "education": "Intermediate",
+      "company": "MMK",
+      "experience": 2,
+      "package": 3000,
+      "id": "92da"
+    },
+    {
+      "firstName": "Gold",
+      "lastName": "Marry",
+      "email": "gold.marry@bbc.com.sg",
+      "dob": "1999-04-01T16:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "Beauty Zone",
+      "experience": 6,
+      "package": 3000,
+      "id": "a6d5"
+    },
+    {
+      "id": "987c",
+      "firstName": "Shwe",
+      "lastName": "Htoo",
+      "email": "shwe.htoo@mmk.com.sg",
+      "dob": "2020-03-31T16:00:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "MegaLock",
+      "experience": 2,
+      "package": 1500
+    },
+    {
+      "firstName": "Gorge",
+      "lastName": "Yeo",
+      "email": "gorge.yeo@mmk.com.sg",
+      "dob": "1995-04-02T16:00:00.000Z",
+      "gender": "male",
+      "education": "Post Graduate",
+      "company": "TINA",
+      "experience": 4,
+      "package": 3000,
+      "id": "8c0f"
+    },
+    {
+      "id": "467a",
+      "firstName": "Zhang",
+      "lastName": "Zhee",
+      "email": "zhang.zee@mmk.com.sg",
+      "dob": "1995-03-31T16:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "NCS",
+      "experience": 10,
+      "package": 5500
+    }
+  ]
+}
